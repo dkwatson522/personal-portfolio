@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { MailIcon, GlobeIcon } from '@heroicons/react/solid';
+import { GlobeIcon } from '@heroicons/react/solid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const projects = [
@@ -35,9 +35,9 @@ const projects = [
 export default function Project() {
   return (
     <>
-      <h1 id="projects">
+      <h3 className="my-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl" id="projects">
         Projects
-      </h1>
+      </h3>
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 ">
         {projects.map((project) => (
           <li
@@ -45,15 +45,22 @@ export default function Project() {
             className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200"
           >
             <div className="flex-1 flex flex-col p-8">
-              <img className="w-64 h-64 flex-shrink-0 mx-auto bg-black rounded-sm object-cover" src={project.previewImage} alt="" />
+              <a
+              href={project.siteURL}
+              className="flex-1 inline-flex items-center justify-center py-4"
+              target="_blank"
+              rel="noreferrer">
+                <img className="w-64 h-64 flex-shrink-0 mx-auto bg-black rounded-sm object-cover" src={project.previewImage} alt="" />
+              </a>
+
               <h3 className="mt-6 text-gray-900 text-sm font-medium">{project.title}</h3>
               <dl className="mt-1 flex-grow flex flex-col justify-between">
-                <dt className="sr-only">Title</dt>
+                <dt className="sr-only">Stack</dt>
                 <dd className="text-gray-500 text-sm">{project.stack}</dd>
-                <dt className="sr-only">Role</dt>
-                <dd className="mt-3">
+                <dt className="sr-only">Tools</dt>
+                <dd className="flex flex-row flex-wrap justify-center mt-3 ">
                   {project.tools.map((tool) => (
-                    <span className="px-2 py-1 text-green-800 text-xs font-medium bg-green-100 rounded-full">
+                    <span className="m-1 px-2 py-1 text-green-800 text-xs font-medium bg-green-100 rounded-full">
                       {tool}
                     </span>
                   ))}
@@ -68,6 +75,7 @@ export default function Project() {
                     href={project.gitCode}
                     className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FontAwesomeIcon className="w-5 h-5 text-blue-400" icon={["fab", "github"]} />
                     <span className="ml-3">Link to Github</span>
@@ -78,9 +86,9 @@ export default function Project() {
                     href={project.siteURL}
                     className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <GlobeIcon className="w-5 h-5 text-green-600" aria-hidden="true" />
-
                     <span className="ml-3">Link to Site</span>
                   </a>
                 </div>
