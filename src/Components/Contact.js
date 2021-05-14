@@ -121,7 +121,7 @@ export default function Contact() {
                   <span className="ml-3">DKWATSON522@GMAIL.COM</span>
                 </dd>
               </dl>
-              <ul className="mt-8 flex space-x-12" role="list">
+              <ul className="mt-8 flex space-x-12">
                 <li>
                   <a className="text-yellow-200 hover:text-yellow-100" href="https://www.linkedin.com/in/daniel-watson-mshi/" target="_blank" rel="noreferrer">
                     <span className="sr-only">LinkedIn</span>
