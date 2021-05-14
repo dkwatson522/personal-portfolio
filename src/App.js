@@ -2,10 +2,10 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Container from './Components/Container';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faGithub } from '@fortawesome/free-brands-svg-icons'
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { fab, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faGithub)
+library.add(fab, fas, faGithub, faLinkedin)
 
 function App() {
   return (

@@ -1,11 +1,11 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { GlobeIcon } from '@heroicons/react/solid';
+
+// import { GlobeIcon } from '@heroicons/react/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const projects = [
   {
     title: 'Dunder Mifflin Employee Portal',
-    stack: 'Full Stack',
+    stack: 'Full-stack web application utilizing Ruby, Ruby on Rails, React and PostgreSQL to mock an employee portal.',
     tools: ['Ruby','Ruby on Rails','PostgreSQL', 'React'],
     gitCode: 'https://github.com/dkwatson522/dunder_mifflin_employee_portal',
     siteURL: 'https://stark-mountain-68376.herokuapp.com/',
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: 'Sugar Spell Mock Website',
-    stack: 'Full Stack',
+    stack: 'Full-stack web application that makes use of NodeJS, Express and MongoDB to showcase a treats business.',
     tools: ['Javascript','NodeJS', 'Express', 'MongoDB','JQuery'],
     gitCode: 'https://github.com/dkwatson522/sugar-spells',
     siteURL: 'https://www.sugar-spell.com/',
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: 'Media Quiz',
-    stack: 'Front-End',
+    stack: 'Web application that utilizes API calls to create dynamic quizzes based trending topics in entertainment.',
     tools: ['Javascript','JQuery'],
     gitCode: 'https://github.com/dkwatson522/dw-movie-guess',
     siteURL: 'https://www.mediaguess.com/',
@@ -36,7 +36,7 @@ export default function Project() {
   return (
     <>
       <div className="overflow-hidden" id="projects">
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
           <div>
             <h3 className="my-2 text-base text-yellow-300 font-semibold tracking-wide uppercase">
               Projects
@@ -82,7 +82,7 @@ export default function Project() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <FontAwesomeIcon className="w-5 h-5 text-blue-400" icon={["fab", "github"]} />
+                          <FontAwesomeIcon className="text-2xl text-blue-400" icon={["fab", "github"]} />
                           <span className="ml-3">Link to Github</span>
                         </a>
                       </div>
@@ -93,7 +93,7 @@ export default function Project() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <GlobeIcon className="w-5 h-5 text-green-600" aria-hidden="true" />
+                          <FontAwesomeIcon className="text-2xl text-green-600" icon={["fas", "link"]} />
                           <span className="ml-3">Link to Site</span>
                         </a>
                       </div>

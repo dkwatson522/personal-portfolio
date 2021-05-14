@@ -1,5 +1,6 @@
 import About from './About'
 import Project from './Project'
+import Contact from './Contact'
 /* This example requires Tailwind CSS v2.0+ */
 export default function Container() {
   return (
@@ -7,6 +8,7 @@ export default function Container() {
       <div className="max-w-3xl mx-auto bg-gray-500 rounded-md">
         <About/>
         <Project/>
+        <Contact/>
       </div>
     </div>
   )

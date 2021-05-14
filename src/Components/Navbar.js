@@ -27,12 +27,12 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="../../DW.png"
+                    src="../../DWLogo.png"
                     alt="Logo"
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="../../DW.png"
+                    src="../../DWLogo.png"
                     alt="Logo"
                   />
                 </div>
