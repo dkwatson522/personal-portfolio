@@ -57,7 +57,7 @@ export default function Navbar() {
                       >
                         <div className="flex">
                           {item.name}
-                          {item.name == 'Download Resume' &&
+                          {item.name === 'Download Resume' &&
                           <a href="../../Daniel_Watson-Resume.pdf" target="_blank" rel="noreferrer" className="text-yellow-400">
                             <DownloadIcon className="flex-shrink-0 w-5 h-5" aria-hidden="true"/>
                           </a>}
