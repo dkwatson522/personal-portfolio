@@ -135,7 +135,7 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a className="text-yellow-200 hover:text-yellow-100" href="https://twitter.com/_dannykw">
+                  <a className="text-yellow-200 hover:text-yellow-100" href="https://twitter.com/_dannykw" target="_blank" rel="noreferrer">
                     <span className="sr-only">Twitter</span>
                     <FontAwesomeIcon className="text-3xl text-yellow-300 hover:text-yellow-500" icon={["fab", "twitter"]} />
                   </a>

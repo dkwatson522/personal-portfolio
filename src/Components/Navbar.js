@@ -1,21 +1,28 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Disclosure } from '@headlessui/react'
-// import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-
-const navigation = [
-  { name: 'About', href: '#about', current: true },
-  { name: 'Projects', href: '#projects', current: false },
-  { name: 'Contact Me', href: '#contact', current: false },
-  { name: 'Download Resume', href: '#contact', current: false }
-
-]
+import { DownloadIcon } from '@heroicons/react/outline'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar() {
+  const [navigation, setNavigation] = useState([
+    { name: 'About', href: '#about', current: false },
+    { name: 'Projects', href: '#projects', current: false },
+    { name: 'Contact Me', href: '#contact', current: false },
+    { name: 'Download Resume', href: '#', current: false }
+  ]);
+
+  // const [selectedNavigation, setSelectedNavigation] = useState();
+  //
+  // const handleNavigationSelect = (name) => {
+  //   setSelectedNavigation(name)
+  //   console.log(name)
+  //
+  // }
+
   return (
     <Disclosure as="nav" className="bg-gray-900">
       {({ open }) => (
@@ -48,8 +55,16 @@ export default function Navbar() {
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
-                        {item.name}
+                        <div className="flex">
+                          {item.name}
+                          {item.name == 'Download Resume' &&
+                          <a href="../../Daniel_Watson-Resume.pdf" target="_blank" rel="noreferrer" className="text-yellow-400">
+                            <DownloadIcon className="flex-shrink-0 w-5 h-5" aria-hidden="true"/>
+                          </a>}
+                        </div>
+
                       </a>
+
                     ))}
                   </div>
                 </div>

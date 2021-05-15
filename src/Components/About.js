@@ -58,16 +58,24 @@ export default function About() {
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg text-gray-300">
-                Hi, my name is Daniel Watson. I am a developer who enjoys learning and building full stack projects.
+                Hello, my name is Daniel Watson and I am a full-stack software engineer.
               </p>
             </div>
             <div className="mt-5 prose prose-indigo text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
-                I have been
+                I enjoy building projects and exploring the many tasks that coding makes possible.
               </p>
               <p>
-                Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet
-                fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.
+                My interest in coding initially came out of curiousity of how applications and web pages are built. What I soon learned is that this curiousity woud be a valuable tool in continuously wanting to learn more once I was exposed to just the tip of the iceberg.
+              </p>
+              <p className="">
+                <img
+                  className="my-2 mx-auto rounded-full shadow-lg object-cover object-center w-24 h-24"
+                  src="../../iceberg.jpeg"
+                  alt=""
+                  width={1184}
+                  height={1376}
+                />
               </p>
             </div>
           </div>
