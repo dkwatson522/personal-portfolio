@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from 'react'
+import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { DownloadIcon } from '@heroicons/react/outline'
 
@@ -8,13 +8,13 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const [navigation, setNavigation] = useState([
-    { name: 'About', href: '#about', current: false },
-    { name: 'Projects', href: '#projects', current: false },
-    { name: 'Contact Me', href: '#contact', current: false },
-    { name: 'Download Resume', href: '#', current: false }
-  ]);
-
+  // const [navigation, setNavigation] = useState([
+  //   { name: 'About', href: '#about', current: false },
+  //   { name: 'Projects', href: '#projects', current: false },
+  //   { name: 'Contact Me', href: '#contact', current: false },
+  //   { name: 'Download Resume', href: '#', current: false }
+  // ]);
+  //
   // const [selectedNavigation, setSelectedNavigation] = useState();
   //
   // const handleNavigationSelect = (name) => {
@@ -22,6 +22,13 @@ export default function Navbar() {
   //   console.log(name)
   //
   // }
+
+  const navigation = [
+    { name: 'About', href: '#about', current: false },
+    { name: 'Projects', href: '#projects', current: false },
+    { name: 'Contact Me', href: '#contact', current: false },
+    { name: 'Download Resume', href: '#', current: false }
+  ]
 
   return (
     <Disclosure as="nav" className="bg-gray-900">
