@@ -26,6 +26,8 @@ export default function Navbar() {
   const navigation = [
     { name: 'About', href: '#about', current: false },
     { name: 'Projects', href: '#projects', current: false },
+    //
+    { name: 'Skills', href: '#skills', current: false },
     { name: 'Contact Me', href: '#contact', current: false },
     { name: 'Download Resume', href: '#', current: false }
   ]

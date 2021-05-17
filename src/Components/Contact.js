@@ -117,8 +117,11 @@ export default function Contact() {
                   <span className="sr-only">Email</span>
                 </dt>
                 <dd className="flex text-base text-gray-300">
-                  <MailIcon className="flex-shrink-0 w-6 h-6 text-yellow-300" aria-hidden="true" />
-                  <span className="ml-3">DKWATSON522@GMAIL.COM</span>
+                  <a className="flex" href="mailto:dkwatson522@gmail.com">
+                    <MailIcon className="flex-shrink-0 w-6 h-6 text-yellow-300" aria-hidden="true" />
+                    <span className="ml-3">DKWATSON522@GMAIL.COM</span>
+                  </a>
+
                 </dd>
               </dl>
               <ul className="mt-8 flex space-x-12">
