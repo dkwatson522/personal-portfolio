@@ -42,7 +42,7 @@ export default function About() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <img
                     className="rounded-lg shadow-lg object-cover object-center"
-                    src="https://res.cloudinary.com/dpwmzblvv/image/upload/v1620970327/Portfolio/3D841667-15E9-4559-9EF1-1E8554BDD2AE_1_105_c_zlqwa9.jpg"
+                    src="https://res.cloudinary.com/dpwmzblvv/image/upload/v1621222397/Portfolio/0X8A7900_lcpix0.jpg"
                     alt=""
                     width={1184}
                     height={1376}
