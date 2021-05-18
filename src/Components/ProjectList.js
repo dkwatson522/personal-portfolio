@@ -47,7 +47,9 @@ const ProjectList = () => {
                 Projects
               </h3>
             </div>
-            {projectElements}
+            <ul className="grid grid-cols-1 gap-6 my-2">
+              {projectElements}
+            </ul>
           </div>
         </div>
       </div>
