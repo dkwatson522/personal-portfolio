@@ -70,7 +70,7 @@ export default function About() {
               </p>
               <p className="">
                 <img
-                  className="my-2 mx-auto rounded-full shadow-lg object-cover object-center w-24 h-24"
+                  className="my-2 mx-auto rounded-md shadow-lg object-cover object-center w-64 h-40"
                   src="../../iceberg.jpeg"
                   alt=""
                   width={1184}
