@@ -28,7 +28,7 @@ export default function Navbar() {
     { name: 'Projects', href: '#projects', current: false },
     // { name: 'Skills', href: '#skills', current: false },
     { name: 'Contact Me', href: '#contact', current: false },
-    { name: 'Download Resume', href: '../../Daniel_Watson-Resume.pdf', current: false }
+    { name: 'Download Resume', href: '../../DanielWatson_Resume.pdf', current: false }
   ]
 
   return (
@@ -38,15 +38,10 @@ export default function Navbar() {
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
 
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-center">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="../../DWLogo.png"
-                    alt="Logo"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-auto"
+                    className="block h-8 w-auto"
                     src="../../DWLogo.png"
                     alt="Logo"
                   />
@@ -66,11 +61,22 @@ export default function Navbar() {
                         <div className="flex">
                           {item.name}
                           {item.name === 'Download Resume' &&
-                            <DownloadIcon className=" text-yellow-400 flex-shrink-0 w-5 h-5" aria-hidden="true"/>
+                            <DownloadIcon className="text-yellow-400 flex-shrink-0 w-5 h-5" aria-hidden="true"/>
                           }
                         </div>
                       </a>
                     ))}
+                  </div>
+                </div>
+
+                <div className="block sm:hidden ml-6">
+                  <div className="flex space-x-4">
+                    <a href="../../DanielWatson_Resume.pdf" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                      <div className="flex">
+                        Download Resume
+                        <DownloadIcon className="text-yellow-400 flex-shrink-0 w-5 h-5" aria-hidden="true"/>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
