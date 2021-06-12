@@ -40,7 +40,7 @@ const ProjectList = () => {
   return (
     <>
       <div className="overflow-hidden" id="projects">
-        <div className="relative max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-2xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
           <div>
             <div>
               <h3 className="my-2 text-base text-yellow-300 font-semibold tracking-wide uppercase">

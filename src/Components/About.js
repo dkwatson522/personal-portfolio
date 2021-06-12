@@ -3,7 +3,7 @@
 export default function About() {
   return (
     <div className="overflow-hidden" id="about">
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-2xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen" />
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
@@ -61,7 +61,7 @@ export default function About() {
                 Hello, my name is Daniel Watson and I am a full-stack software engineer.
               </p>
             </div>
-            <div className="mt-5 prose prose-indigo text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+            <div className="mt-5 max-w-prose text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
                 I enjoy building projects and exploring the many tasks that coding makes possible.
               </p>

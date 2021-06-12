@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Contact() {
   return (
     <div className="overflow-hidden" id="contact">
-      <div className="relative max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-2xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="">
           <h2 className="sr-only">Contact me</h2>
 
 
-          <div className="grid grid-cols-1 ">
+          <div className="">
             {/* Contact information */}
-            <div className="relative overflow-hidden py-10 xl:p-12 rounded-lg">
+            <div className="relative overflow-hidden py-10 rounded-lg">
               <div className="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                 <svg
                   className="absolute inset-0 w-full h-full"
