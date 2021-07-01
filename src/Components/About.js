@@ -79,6 +79,13 @@ export default function About() {
             </div>
           </div>
         </div>
+        // <p className="">
+        //   <img
+        //     className="my-2 mx-auto rounded-md shadow-lg object-cover object-center w-full h-full"
+        //     src="../../iceberg.jpeg"
+        //     alt=""
+        //   />
+        // </p>
       </div>
     </div>
   )
