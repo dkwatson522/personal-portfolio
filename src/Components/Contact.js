@@ -1,5 +1,6 @@
 import { MailIcon } from '@heroicons/react/outline'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { motion } from "framer-motion"
 
 export default function Contact() {
   return (
@@ -108,7 +109,15 @@ export default function Contact() {
                   </defs>
                 </svg>
               </div>
-              <h2 className="text-base text-yellow-300 font-semibold tracking-wide uppercase">CONTACT INFORMATION</h2>
+              <motion.h2 className="text-base text-yellow-300 font-semibold tracking-wide uppercase"
+              animate={{ x: 200 }}
+              transition={{
+                x: { type: "spring", stiffness: 200 },
+              }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 350 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}>CONTACT INFORMATION</motion.h2>
               <p className="mt-6 text-base text-gray-300 max-w-3xl">
                 If you would like to learn more information about me, please use one of the contacts below!
               </p>
@@ -116,7 +125,7 @@ export default function Contact() {
                 <dt>
                   <span className="sr-only">Email</span>
                 </dt>
-                <dd className="flex text-base text-gray-300">
+                <dd className="flex justify-center text-base text-gray-300">
                   <a className="flex" href="mailto:dkwatson522@gmail.com">
                     <MailIcon className="flex-shrink-0 w-6 h-6 text-yellow-300" aria-hidden="true" />
                     <span className="ml-3">DKWATSON522@GMAIL.COM</span>
@@ -124,7 +133,7 @@ export default function Contact() {
 
                 </dd>
               </dl>
-              <ul className="mt-8 flex space-x-12">
+              <ul className="flex justify-center mt-8 flex space-x-12">
                 <li>
                   <a className="text-yellow-200 hover:text-yellow-100" href="https://www.linkedin.com/in/daniel-watson-mshi/" target="_blank" rel="noreferrer">
                     <span className="sr-only">LinkedIn</span>

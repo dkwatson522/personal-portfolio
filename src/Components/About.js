@@ -1,52 +1,39 @@
-// import { CameraIcon } from '@heroicons/react/solid'
-
-// <p className="">
-//   <img
-//     className="my-2 mx-auto rounded-md shadow-lg object-cover object-center w-full h-full"
-//     src="../../iceberg.jpeg"
-//     alt=""
-//   />
-// </p>
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { motion } from "framer-motion"
 
 
 export default function About() {
   return (
-    <div className="overflow-hidden" id="about">
+    <motion.div className="overflow-hidden" id="about" layout>
       <div className="relative max-w-2xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen" />
-        <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+        <motion.div
+          className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none"
+          animate={{ x: 200 }}
+          transition={{
+            x: { type: "spring", stiffness: 200 },
+          }}
+          drag="x"
+          dragConstraints={{ left: 0, right: 350 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <div>
-            <h2 className="text-base text-yellow-300 font-semibold tracking-wide uppercase">Meet the Developer</h2>
-            <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <motion.h2
+              className="text-base text-yellow-300 font-semibold tracking-tight uppercase text-gray-900 sm:text-4xl"
+              
+            >
               Daniel Watson
-            </h3>
+            </motion.h2>
           </div>
-        </div>
+        </motion.div >
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="relative lg:row-start-1 lg:col-start-2">
-            <svg
-              className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
-              width={404}
-              height={384}
-              fill="none"
-              viewBox="0 0 404 384"
-              aria-hidden="true"
+            <motion.div
+              animate={{ scale: 1.0 }}
+              transition={{ duration: 0.5 }}
+              className="relative text-base mx-auto max-w-prose lg:max-w-none"
             >
-              <defs>
-                <pattern
-                  id="de316486-4a29-4312-bdfc-fbce2132a2c1"
-                  x={0}
-                  y={0}
-                  width={20}
-                  height={20}
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
-                </pattern>
-              </defs>
-              <rect width={404} height={384} fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
-            </svg>
-            <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <img
@@ -56,13 +43,13 @@ export default function About() {
                     width={1184}
                     height={1376}
                   />
-                  </div>
-                  {/*<figcaption className="mt-3 flex text-sm text-gray-500">
-                    <CameraIcon className="flex-none w-5 h-5 text-gray-400" aria-hidden="true" />
-                    <span className="ml-2">Photograph by Marcus O’Leary</span>
-                  </figcaption>*/}
+                </div>
               </figure>
+            </motion.div>
+            <div className="mx-auto flex justify-center mt-2">
+              <FontAwesomeIcon className="text-9xl text-yellow-300 text-center" icon={["fas", "laptop-code"]} />
             </div>
+
           </div>
           <div className="mt-8 lg:mt-0 px-2">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
@@ -75,19 +62,12 @@ export default function About() {
                 I enjoy building projects and exploring the many tasks that coding makes possible.
               </p>
               <p>
-                My interest in coding initially came out of curiousity of how applications and web pages are built. What I soon learned is that this curiousity woud be a valuable tool in continuously wanting to learn more once I was exposed to just the tip of the iceberg.
+                My interest in coding initially came out of curiousity of how applications and web pages were built. I soon learned that this curiousity woud be a valuable tool in continuously wanting to learn more once I was exposed to coding. I look forward to working collaboritively and gaining knowledge from other experienced software engineers.
               </p>
             </div>
           </div>
         </div>
-        {/*// <p className="">
-        //   <img
-        //     className="my-2 mx-auto rounded-md shadow-lg object-cover object-center w-full h-full"
-        //     src="../../iceberg.jpeg"
-        //     alt=""
-        //   />
-        // </p>*/}
       </div>
-    </div>
+    </motion.div>
   )
 }

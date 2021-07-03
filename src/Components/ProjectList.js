@@ -1,7 +1,5 @@
-
-// import { GlobeIcon } from '@heroicons/react/solid'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Project from './Project'
+import { motion } from "framer-motion"
 
 const projects = [
   {
@@ -43,9 +41,19 @@ const ProjectList = () => {
         <div className="relative max-w-2xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
           <div>
             <div>
-              <h3 className="my-2 text-base text-yellow-300 font-semibold tracking-wide uppercase">
+              <motion.h3
+                className="my-2 text-base text-yellow-300 font-semibold tracking-wide uppercase text-center"
+                animate={{ y:0 }}
+                transition={{
+                  x: { type: "spring", stiffness: 200 },
+                }}
+                drag="x"
+                dragConstraints={{ left: 0, right: 350 }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 Projects
-              </h3>
+              </motion.h3>
             </div>
             <ul className="grid grid-cols-1 gap-6 my-2">
               {projectElements}
