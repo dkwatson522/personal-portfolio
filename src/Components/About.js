@@ -1,37 +1,26 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { motion } from "framer-motion"
 
 
 export default function About() {
   return (
-    <motion.div className="overflow-hidden" id="about" layout>
+    <div className="overflow-hidden" id="about" layout>
       <div className="relative max-w-2xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen" />
-        <motion.div
-          className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none"
-          animate={{ x: 200 }}
-          transition={{
-            x: { type: "spring", stiffness: 200 },
-          }}
-          drag="x"
-          dragConstraints={{ left: 0, right: 350 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+        <div
+          className="flex justify-center mx-auto text-base max-w-prose lg:gap-8 lg:max-w-none"
         >
           <div>
-            <motion.h2
+            <h2
               className="text-base text-yellow-300 font-semibold tracking-tight uppercase text-gray-900 sm:text-4xl"
-              
+
             >
               Daniel Watson
-            </motion.h2>
+            </h2>
           </div>
-        </motion.div >
+        </div >
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="relative lg:row-start-1 lg:col-start-2">
-            <motion.div
-              animate={{ scale: 1.0 }}
-              transition={{ duration: 0.5 }}
+            <div
               className="relative text-base mx-auto max-w-prose lg:max-w-none"
             >
               <figure>
@@ -45,7 +34,7 @@ export default function About() {
                   />
                 </div>
               </figure>
-            </motion.div>
+            </div>
             <div className="mx-auto flex justify-center mt-2">
               <FontAwesomeIcon className="text-9xl text-yellow-300 text-center" icon={["fas", "laptop-code"]} />
             </div>
@@ -68,6 +57,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }

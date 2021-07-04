@@ -40,20 +40,12 @@ const ProjectList = () => {
       <div className="overflow-hidden" id="projects">
         <div className="relative max-w-2xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
           <div>
-            <div>
-              <motion.h3
+            <div className="flex justify-center">
+              <h3
                 className="my-2 text-base text-yellow-300 font-semibold tracking-wide uppercase text-center"
-                animate={{ y:0 }}
-                transition={{
-                  x: { type: "spring", stiffness: 200 },
-                }}
-                drag="x"
-                dragConstraints={{ left: 0, right: 350 }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
               >
                 Projects
-              </motion.h3>
+              </h3>
             </div>
             <ul className="grid grid-cols-1 gap-6 my-2">
               {projectElements}

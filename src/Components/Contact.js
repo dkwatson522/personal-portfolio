@@ -1,6 +1,6 @@
 import { MailIcon } from '@heroicons/react/outline'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 
 export default function Contact() {
   return (
@@ -109,16 +109,8 @@ export default function Contact() {
                   </defs>
                 </svg>
               </div>
-              <motion.h2 className="text-base text-yellow-300 font-semibold tracking-wide uppercase"
-              animate={{ x: 200 }}
-              transition={{
-                x: { type: "spring", stiffness: 200 },
-              }}
-              drag="x"
-              dragConstraints={{ left: 0, right: 350 }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}>CONTACT INFORMATION</motion.h2>
-              <p className="mt-6 text-base text-gray-300 max-w-3xl">
+              <h2 className="flex justify-center text-base text-yellow-300 font-semibold tracking-wide uppercase">CONTACT INFORMATION</h2>
+              <p className="mt-6 text-center text-base text-gray-300 max-w-3xl">
                 If you would like to learn more information about me, please use one of the contacts below!
               </p>
               <dl className="mt-8 space-y-6">
