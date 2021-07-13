@@ -20,10 +20,10 @@ export default function Project( project ) {
           <h3 className="mt-6 text-gray-900 text-sm font-medium">{project.title}</h3>
           <dl className="mt-1 flex-grow flex flex-col justify-between">
             <dt className="sr-only">Stack</dt>
-            <dd className="text-gray-500 text-sm">{project.stack}</dd>
+            <dd className="text-gray-500 text-sm">{project.info}</dd>
             <dt className="sr-only">Tools</dt>
             <dd className="flex flex-row flex-wrap justify-center mt-3 ">
-              {project.tools.map((tool) => (
+              {project.stack.map((tool) => (
                 <span className="m-1 px-2 py-1 text-green-800 text-xs font-medium bg-green-100 rounded-full">
                   {tool}
                 </span>

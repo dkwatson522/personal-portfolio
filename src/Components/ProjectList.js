@@ -3,9 +3,18 @@ import Project from './Project'
 
 const projects = [
   {
+    title: 'Weekly Fitness Tracker',
+    info: 'Frontend Application used to track workouts on a weekly basis to collaborate with others',
+    stack: ['Javascript','React'],
+    gitCode: 'https://github.com/dkwatson522/rod-get-wright',
+    siteURL: 'https://boring-kirch-f1160a.netlify.app/',
+    previewImage:
+      'https://res.cloudinary.com/dpwmzblvv/image/upload/v1626152583/Portfolio/Screen_Shot_2021-07-13_at_1.02.24_AM_q1jsrc.png',
+  },
+  {
     title: 'Dunder Mifflin Employee Portal',
-    stack: 'Full-stack web application utilizing Ruby, Ruby on Rails, React and PostgreSQL to mock an employee portal.',
-    tools: ['Ruby','Ruby on Rails','PostgreSQL', 'React'],
+    info: 'Full-stack web application utilizing Ruby, Ruby on Rails, React and PostgreSQL to mock an employee portal.',
+    stack: ['Ruby','Ruby on Rails','PostgreSQL', 'React'],
     gitCode: 'https://github.com/dkwatson522/dunder_mifflin_employee_portal',
     siteURL: 'https://stark-mountain-68376.herokuapp.com/',
     previewImage:
@@ -13,8 +22,8 @@ const projects = [
   },
   {
     title: 'Sugar Spell Mock Website',
-    stack: 'Full-stack web application that makes use of NodeJS, Express and MongoDB to showcase a treats business.',
-    tools: ['Javascript','NodeJS', 'Express', 'MongoDB','JQuery'],
+    info: 'Full-stack web application that makes use of NodeJS, Express and MongoDB to showcase a treats business.',
+    stack: ['Javascript','NodeJS', 'Express', 'MongoDB','JQuery'],
     gitCode: 'https://github.com/dkwatson522/sugar-spells',
     siteURL: 'https://www.sugar-spell.com/',
     previewImage:
@@ -22,8 +31,8 @@ const projects = [
   },
   {
     title: 'Media Quiz',
-    stack: 'Web application that utilizes API calls to create dynamic quizzes based trending topics in entertainment.',
-    tools: ['Javascript','JQuery'],
+    info: 'Web application that utilizes API calls to create dynamic quizzes based trending topics in entertainment.',
+    stack: ['Javascript','JQuery'],
     gitCode: 'https://github.com/dkwatson522/dw-movie-guess',
     siteURL: 'https://www.mediaguess.com/',
     previewImage:
