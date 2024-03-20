@@ -28,7 +28,7 @@ export default function Navbar() {
     { name: 'Projects', href: '#projects', current: false },
     // { name: 'Skills', href: '#skills', current: false },
     { name: 'Contact Me', href: '#contact', current: false },
-    { name: 'Download Resume', href: '../../DanielWatson_Resume2023.pdf', current: false }
+    { name: 'Download Resume', href: '../../DanielWatson_Resume24.pdf', current: false }
   ]
 
   return (
@@ -42,7 +42,7 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block h-8 w-auto"
-                    src="../../DWLogo.png"
+                    src="../../dw_logo_2.jpg"
                     alt="Logo"
                   />
                 </div>
@@ -71,7 +71,7 @@ export default function Navbar() {
 
                 <div className="block sm:hidden ml-6">
                   <div className="flex space-x-4">
-                    <a href="../../DanielWatson_Resume2023.pdf" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                    <a href="../../DanielWatson_Resume2024.pdf" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                       <div className="flex">
                         Download Resume
                         <DownloadIcon className="text-yellow-400 flex-shrink-0 w-5 h-5" aria-hidden="true"/>

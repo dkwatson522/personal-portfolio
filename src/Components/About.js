@@ -43,15 +43,18 @@ export default function About() {
           <div className="mt-8 lg:mt-0 px-2">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg text-gray-300">
-                Hello, my name is Daniel Watson and I am a full-stack software engineer.
+                Hello! I'm Daniel Watson, a passionate full-stack software engineer.
               </p>
             </div>
             <div className="mt-5 max-w-prose text-gray-300 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
-                I enjoy building projects and exploring the many tasks that coding makes possible.
+                I thrive on the challenge and creativity that come with building diverse projects through coding. My journey into the world of software development was sparked by a deep curiosity about the inner workings of applications and web pages. This curiosity transformed into a powerful driving force, propelling me to delve deeper and continuously expand my knowledge in the field.
               </p>
               <p>
-                My interest in coding initially came out of curiousity of how applications and web pages were built. I soon learned that this curiousity woud be a valuable tool in continuously wanting to learn more once I was exposed to coding. I look forward to working collaboritively and gaining knowledge from other experienced software engineers.
+                As I navigate this ever-evolving landscape, I eagerly anticipate the opportunities to collaborate with other seasoned software engineers. I believe that teamwork not only accelerates personal growth but also leads to the creation of more innovative and robust solutions.
+              </p>
+              <p>
+                I look forward to contributing my skills and learning from the collective wisdom of the community.
               </p>
             </div>
           </div>
