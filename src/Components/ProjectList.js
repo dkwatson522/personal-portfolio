@@ -11,15 +11,15 @@ const projects = [
     previewImage:
       'https://res.cloudinary.com/dpwmzblvv/image/upload/v1626152583/Portfolio/Screen_Shot_2021-07-13_at_1.02.24_AM_q1jsrc.png',
   },
-  {
-    title: 'Dunder Mifflin Employee Portal',
-    info: 'Full-stack web application utilizing Ruby, Ruby on Rails, React and PostgreSQL to mock an employee portal.',
-    stack: ['Ruby','Ruby on Rails','PostgreSQL', 'React'],
-    gitCode: 'https://github.com/dkwatson522/dunder_mifflin_employee_portal',
-    siteURL: 'https://stark-mountain-68376.herokuapp.com/',
-    previewImage:
-      'https://res.cloudinary.com/dpwmzblvv/image/upload/v1620792087/Portfolio/Screen_Shot_2021-05-07_at_7.24.27_AM_vcozco.png',
-  },
+  // {
+  //   title: 'Dunder Mifflin Employee Portal',
+  //   info: 'Full-stack web application utilizing Ruby, Ruby on Rails, React and PostgreSQL to mock an employee portal.',
+  //   stack: ['Ruby','Ruby on Rails','PostgreSQL', 'React'],
+  //   gitCode: 'https://github.com/dkwatson522/dunder_mifflin_employee_portal',
+  //   siteURL: 'https://stark-mountain-68376.herokuapp.com/',
+  //   previewImage:
+  //     'https://res.cloudinary.com/dpwmzblvv/image/upload/v1620792087/Portfolio/Screen_Shot_2021-05-07_at_7.24.27_AM_vcozco.png',
+  // },
   {
     title: 'Sugar Spell Mock Website',
     info: 'Full-stack web application that makes use of NodeJS, Express and MongoDB to showcase a treats business.',
