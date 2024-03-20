@@ -25,7 +25,7 @@ const projects = [
     info: 'Full-stack web application that makes use of NodeJS, Express and MongoDB to showcase a treats business.',
     stack: ['Javascript','NodeJS', 'Express', 'MongoDB','JQuery'],
     gitCode: 'https://github.com/dkwatson522/sugar-spells',
-    siteURL: 'https://www.sugar-spell.com/',
+    siteURL: 'https://sugar-spells-nodejs.onrender.com/',
     previewImage:
       'https://res.cloudinary.com/dpwmzblvv/image/upload/v1620792087/Portfolio/Screen_Shot_2021-05-07_at_8.23.21_AM_vwnapj.png',
   },
