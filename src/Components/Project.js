@@ -28,7 +28,6 @@ export default function Project( project ) {
                   {tool}
                 </span>
               ))}
-
             </dd>
           </dl>
         </div>
@@ -45,17 +44,19 @@ export default function Project( project ) {
                 <span className="ml-3">Link to Github</span>
               </a>
             </div>
-            <div className="-ml-px w-0 flex-1 flex">
-              <a
-                href={project.siteURL}
-                className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon className="text-2xl text-green-600" icon={["fas", "link"]} />
-                <span className="ml-3">Link to Site</span>
-              </a>
-            </div>
+            {project.siteURL && (
+              <div className="-ml-px w-0 flex-1 flex">
+                <a
+                  href={project.siteURL}
+                  className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon className="text-2xl text-green-600" icon={['fas', 'link']} />
+                  <span className="ml-3">Link to Site</span>
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </li>
