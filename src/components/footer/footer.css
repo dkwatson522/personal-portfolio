@@ -1,4 +1,4 @@
-footer{
+footer {
 
   background: var(--color-primary);
   padding: 3rem 0;
@@ -7,20 +7,22 @@ footer{
   margin-top: 7rem;
 }
 
-footer a{
+footer a {
 
   color: var(--color-bg);
 }
 
-.footer__logo{
-
-  font-size: 2rem;
-  font-weight: 500;
+.footer__logo {
+  width: 100px;
+  /* Adjust this value to scale your image */
+  height: auto;
+  /* This ensures the aspect ratio is maintained */
   margin-bottom: 2rem;
   display: inline-block;
 }
 
-.permalinks{
+
+.permalinks {
 
   display: flex;
   flex-wrap: wrap;
@@ -30,7 +32,7 @@ footer a{
 
 }
 
-.footer__socials{
+.footer__socials {
 
   display: flex;
   justify-content: center;
@@ -38,7 +40,7 @@ footer a{
   margin-bottom: 4rem;
 }
 
-.footer__socials a{
+.footer__socials a {
 
   background: var(--color-bg);
   color: var(--color-white);
@@ -48,14 +50,14 @@ footer a{
   border: 1px solid transparent;
 }
 
-.footer__socials a:hover{
+.footer__socials a:hover {
 
   background: transparent;
   color: var(--color-bg);
   border-color: var(--color-bg);
 }
 
-.footer__copyright{
+.footer__copyright {
 
   margin-bottom: 4rem;
   color: var(--color-bg);
@@ -65,14 +67,14 @@ footer a{
 
 @media screen and (max-width: 600px) {
 
-  .permalinks{
+  .permalinks {
 
-      flex-direction: column;
-      gap: 1.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
-  .footer__socials{
+  .footer__socials {
 
-      margin-bottom: 2.6rem;
+    margin-bottom: 2.6rem;
   }
 }
