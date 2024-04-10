@@ -67,7 +67,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            I'm a passionate <b>backend engineer</b>. I thrive on the challenge
+            I'm a passionate <b>software engineer</b>. I thrive on the challenge
             and creativity that come with building diverse projects through
             coding. My journey into the world of software development was
             sparked by a deep curiosity about the inner workings of applications
