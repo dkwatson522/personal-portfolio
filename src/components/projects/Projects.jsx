@@ -1,6 +1,7 @@
 import React from "react";
 import "./projects.css";
 import IMG1 from "../../assets/portfolio_screenshot.png";
+import IMG2 from "../../assets/doctor_booking_screenshot.png";
 
 const Projects = () => {
   return (
@@ -8,6 +9,33 @@ const Projects = () => {
       <h5>My Recent Work</h5>
       <h2>Projects</h2>
       <div className="container portfolio__container">
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG2} alt="" />
+          </div>
+          <h3>Doctor Booking</h3>
+          <small className="text-light">
+            Next.js | React | Strapi | PostgresQL
+          </small>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/dkwatson522/doctor-booking-nextjs"
+              target="_blank"
+              rel="noreferrer"
+              className="btn"
+            >
+              Github (Frontend)
+            </a>
+            <a
+              href="https://github.com/dkwatson522/doctor-booking-strapi"
+              target="_blank"
+              rel="noreferrer"
+              className="btn"
+            >
+              Github (Backend)
+            </a>
+          </div>
+        </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG1} alt="" />
