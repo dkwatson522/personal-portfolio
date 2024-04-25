@@ -5956,9 +5956,9 @@
       }
     },
     "node_modules/caniuse-lite": {
-      "version": "1.0.30001612",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001612.tgz",
-      "integrity": "sha512-lFgnZ07UhaCcsSZgWW0K5j4e69dK1u/ltrL9lTUiFOwNHs12S3UMIEYgBV0Z6C6hRDev7iRnMzzYmKabYdXF9g==",
+      "version": "1.0.30001611",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001611.tgz",
+      "integrity": "sha512-19NuN1/3PjA3QI8Eki55N8my4LzfkMCRLgCVfrl/slbSAchQfV0+GwjPrK3rq37As4UCLlM/DHajbKkAqbv92Q==",
       "funding": [
         {
           "type": "opencollective",
@@ -14464,9 +14464,9 @@
       "integrity": "sha512-Y1wZESM7VUThYY+4W+X4ySH2maqcA+p7UR+w8VWNWVAd6lwuXXWz/w/Cz43J/dI2I+PS6wD5N+bJUF+gjWvIqg=="
     },
     "node_modules/nwsapi": {
-      "version": "2.2.9",
-      "resolved": "https://registry.npmjs.org/nwsapi/-/nwsapi-2.2.9.tgz",
-      "integrity": "sha512-2f3F0SEEer8bBu0dsNCFF50N0cTThV1nWFYcEYFZttdW0lDAoybv9cQoK7X7/68Z89S7FoRrVjP1LPX4XRf9vg=="
+      "version": "2.2.7",
+      "resolved": "https://registry.npmjs.org/nwsapi/-/nwsapi-2.2.7.tgz",
+      "integrity": "sha512-ub5E4+FBPKwAZx0UwIQOjYWGHTEq5sPqHQNRN8Z9e4A7u3Tj1weLJsL59yH9vmvqEtBHaOmT6cYQKIZOxp35FQ=="
     },
     "node_modules/object-assign": {
       "version": "4.1.1",
@@ -27537,9 +27537,9 @@
       }
     },
     "caniuse-lite": {
-      "version": "1.0.30001612",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001612.tgz",
-      "integrity": "sha512-lFgnZ07UhaCcsSZgWW0K5j4e69dK1u/ltrL9lTUiFOwNHs12S3UMIEYgBV0Z6C6hRDev7iRnMzzYmKabYdXF9g=="
+      "version": "1.0.30001611",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001611.tgz",
+      "integrity": "sha512-19NuN1/3PjA3QI8Eki55N8my4LzfkMCRLgCVfrl/slbSAchQfV0+GwjPrK3rq37As4UCLlM/DHajbKkAqbv92Q=="
     },
     "capture-exit": {
       "version": "2.0.0",
@@ -34089,9 +34089,9 @@
       "integrity": "sha512-Y1wZESM7VUThYY+4W+X4ySH2maqcA+p7UR+w8VWNWVAd6lwuXXWz/w/Cz43J/dI2I+PS6wD5N+bJUF+gjWvIqg=="
     },
     "nwsapi": {
-      "version": "2.2.9",
-      "resolved": "https://registry.npmjs.org/nwsapi/-/nwsapi-2.2.9.tgz",
-      "integrity": "sha512-2f3F0SEEer8bBu0dsNCFF50N0cTThV1nWFYcEYFZttdW0lDAoybv9cQoK7X7/68Z89S7FoRrVjP1LPX4XRf9vg=="
+      "version": "2.2.7",
+      "resolved": "https://registry.npmjs.org/nwsapi/-/nwsapi-2.2.7.tgz",
+      "integrity": "sha512-ub5E4+FBPKwAZx0UwIQOjYWGHTEq5sPqHQNRN8Z9e4A7u3Tj1weLJsL59yH9vmvqEtBHaOmT6cYQKIZOxp35FQ=="
     },
     "object-assign": {
       "version": "4.1.1",

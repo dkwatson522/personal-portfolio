@@ -24,7 +24,7 @@ const Projects = () => {
               rel="noreferrer"
               className="btn"
             >
-              Github (Frontend)
+              Github (FE)
             </a>
             <a
               href="https://github.com/dkwatson522/doctor-booking-strapi"
@@ -32,7 +32,7 @@ const Projects = () => {
               rel="noreferrer"
               className="btn"
             >
-              Github (Backend)
+              Github (BE)
             </a>
           </div>
         </article>
